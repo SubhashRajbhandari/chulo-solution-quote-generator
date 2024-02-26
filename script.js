@@ -60,3 +60,16 @@ const quotes = {
     fontSize = Math.max(fontSize - 2, 12);
     quoteElement.style.fontSize = `${fontSize}px`;
   }
+
+  prevBtn.addEventListener("click", showPrevQuote);
+  nextBtn.addEventListener("click", showNextQuote);
+  randomBtn.addEventListener("click", showRandomQuote);
+  categorySelect.addEventListener("change", () => {
+    currentCategory = categorySelect.value;
+    showNextQuote();
+  });
+  darkModeToggle.addEventListener("change", toggleDarkMode);
+  increaseFontBtn.addEventListener("click", increaseFontSize);
+  decreaseFontBtn.addEventListener("click", decreaseFontSize);
+  
+  displayQuote();
