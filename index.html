@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quote Generator</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="quote-container">
-      <p id="quote"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quote-container">
+        <p id="quote"></p>
+      </div>
+      <div class="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="randomBtn">Random</button>
+        <select id="categorySelect">
+          <option value="science">Science</option>
+          <option value="inspiration">Inspiration</option>
+        </select>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <button id="increaseFontBtn">+</button>
+        <button id="decreaseFontBtn">-</button>
+      </div>
     </div>
-    <div class="controls">
-      <button id="prevBtn">Previous</button>
-      <button id="nextBtn">Next</button>
-      <button id="randomBtn">Random</button>
-      <select id="categorySelect">
-        <option value="science">Science</option>
-        <option value="inspiration">Inspiration</option>
-      </select>
-      <label class="switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider round"></span>
-      </label>
-      <button id="increaseFontBtn">+</button>
-      <button id="decreaseFontBtn">-</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
