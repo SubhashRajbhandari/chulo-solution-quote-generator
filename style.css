@@ -52,13 +52,20 @@ select {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-}
+  }
 
 .dark-mode {
   background-color: rgb(9, 8, 8);
-  color: #b2bc47;
+  
 }
-
+.dark-mode .container {
+  background-color: #333; 
+  color: #b2bc47; 
+}
+.dark-mode select{
+  background-color: grey;
+  color: black; 
+}
 .switch {
   position: relative;
   display: inline-block;
